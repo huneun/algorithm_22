@@ -1,0 +1,14 @@
+package bubble_sort;
+
+import java.util.*;
+
+public class bubble {
+	
+	ArrayList<Integer> arrayList = new ArrayList<>();
+	arrayList.add(4);
+	arrayList.add(2);
+	
+	
+	
+
+}

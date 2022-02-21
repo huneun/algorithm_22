@@ -1,0 +1,30 @@
+package bubble_sort;
+
+import java.util.*;
+
+public class bubble {
+	
+	
+	public ArrayList<Integer> mySort(ArrayList<Integer> array) {
+		
+		ArrayList<Integer> sortedArray = array;
+		
+		for(int i =0; i<array.size()-1; i++) {
+			boolean swap = false;
+			for(int j=0; j<array.size()-1-i; j++) {
+				if(sortedArray.get(i) > sortedArray.get(j)) {
+					Collections.swap(sortedArray, i, j);
+					swap = true;
+				}	
+			}
+			if(!swap) {
+				break;
+			}
+		}
+		
+		return sortedArray;
+	}
+	
+	
+
+}

@@ -1,0 +1,41 @@
+package bubble_sort;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> arrayList = new ArrayList<>();
+		arrayList.add(5);
+		arrayList.add(8);
+		arrayList.add(11);
+		arrayList.add(2);
+		arrayList.add(4);
+		
+		
+		
+	}
+	
+	public ArrayList<Integer> sort(ArrayList<Integer> array) {
+		
+		ArrayList<Integer> sortedArray = array;
+		
+		for(int i =0; i<array.size()-1; i++) {
+			boolean swap = false;
+			for(int j=0; j<array.size()-1-i; j++) {
+				if(sortedArray.get(i) > sortedArray.get(j)) {
+					Collections.swap(sortedArray, i, j);
+					swap = true;
+				}	
+			}
+			if(!swap) {
+				break;
+			}
+		}
+		
+		return sortedArray;
+	}
+
+}
